@@ -209,7 +209,7 @@ function unsubscribeCurrentRSVP(){
 // Listen to the current Auth state
 firebase.auth().onAuthStateChanged((user) => {
 if (user){
-  startRsvpButton.textContent = "LOGOUT";
+  startRsvpButton.textContent = "Sair";
   // Show guestbook to logged-in users
   guestbookContainer.style.display = "block";
 
@@ -219,7 +219,7 @@ if (user){
   subscribeCurrentRSVP(user);
 }
 else{
-  startRsvpButton.textContent = "RSVP";
+  startRsvpButton.textContent = "Entrar / Registrar";
   // Hide guestbook for non-logged-in users
   guestbookContainer.style.display = "none";
 
