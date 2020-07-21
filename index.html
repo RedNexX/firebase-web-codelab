@@ -28,8 +28,13 @@
 
 		<section id="event-details-container">
 			<h1>Reunião sobre o FireBase</h1>
-
-			<p><i class="material-icons">calendar_today</i> 21 de Julho</p>
+			<script language=javascript type="text/javascript">
+				now = new Date();
+			</script>
+			<p><i class="material-icons">calendar_today</i>
+				<script language=javascript type="text/javascript">
+					document.write(now.getDay());
+				</script> de Julho</p>
 			<p><i class="material-icons">location_city</i> Coimbra PT</p>
 			<button id="startRsvp">Entrar / Registrar</button>
 		</section>
